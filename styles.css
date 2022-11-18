@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --main-color: rgb(230,99,71);
+    --secondary: rgb(242,235,230);
+    --egg-color: rgb(235,190,124);
+    --emphasis: rgb(255, 210, 48);
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+    color: var(--secondary);
+}
+.bg-container {
+    background-image: url("/ramen.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 95%;
+    width: 40%;
+}
+.sign-up-container {
+    width: 60%;
+    margin: 0px 20px;
+}
+.description {
+    margin-bottom: 40px;
+    width: 80%;
+}
+.input-section {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    margin: 5px;
+    width: 90%;
+}
+.light-bg {
+    padding: 10px 150px 10px 30px;
+    background-color: var(--secondary);
+    color: var(--main-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.light-bg>h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
